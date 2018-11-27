@@ -23,7 +23,7 @@ public class rsa {
 						{
 							break;
 						}
-					e=new BigInteger(bitlen/2,100,r);
+					//e=new BigInteger(bitlen/2,100,r);
 				}
 			System.out.println(e);
 			d=e.modInverse(phi);
