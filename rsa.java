@@ -17,7 +17,7 @@ public class rsa {
 			n=p.multiply(q);
 			phi=(p.subtract(BigInteger.ONE)).multiply(q.subtract(BigInteger.ONE));
 			e=new BigInteger(bitlen/2,100,r);
-			while(e.compareTo(BigInteger.ONE)>0 && e.compareTo(phi)>0)	
+			while(e.compareTo(BigInteger.ONE)>0 && e.compareTo(phi)<0)	
 				{
 					if(phi.gcd(e).equals(BigInteger.ONE))
 						{
